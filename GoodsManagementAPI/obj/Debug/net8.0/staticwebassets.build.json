@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gMTPDd9NaTHAzoxnGSUyxcFNzw96ZJ0pxD0UsE8sAdM=",
+  "Source": "GoodsManagementAPI",
+  "BasePath": "_content/GoodsManagementAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

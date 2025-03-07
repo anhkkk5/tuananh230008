@@ -1,0 +1,30 @@
+﻿@model List<GoodsManagementMVC.Models.HangHoa>
+
+<h2>Danh sách hàng hóa</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã hàng hóa</th>
+            <th>Tên hàng hóa</th>
+            <th>Số lượng</th>
+            <th>Ghi chú</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaHangHoa</td>
+                <td>@item.TenHangHoa</td>
+                <td>@item.SoLuong</td>
+                <td>@item.GhiChu</td>
+                <td>
+                    <a href="@Url.Action("Edit", "HangHoa", new { id = item.MaHangHoa })">Sửa</a> |
+                    <a href="@Url.Action("Delete", "HangHoa", new { id = item.MaHangHoa })">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Create", "HangHoa")" class="btn btn-primary">Thêm mới</a>
